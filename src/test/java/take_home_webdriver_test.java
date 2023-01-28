@@ -47,7 +47,7 @@ public void verifyContextMenuPage(){
 }
 @Test
 public void verifyDragAndDropFunctions() {
-    DragAndDropPage dragAndDrop = new DragAndDropPage(driver);
+    DragAndDropPage dragAndDrop = new DragAndDropPage(driver,softAssert);
     dragAndDrop.navigatetoDragAndDropPage();
     dragAndDrop.performDragAndDrop();
 }
